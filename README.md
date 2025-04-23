@@ -1,65 +1,26 @@
 📚 Giới thiệu
-Đây là một khung dự án khởi đầu (starter project) giúp bạn nhanh chóng tạo ứng dụng web bằng Streamlit. Dự án này đã được cấu trúc sẵn với các thư mục hợp lý, giúp bạn dễ dàng phát triển, mở rộng, và triển khai.
+Streamlit Base là một bộ khung cơ bản giúp bạn dễ dàng bắt đầu với dự án Streamlit. Nó đã được tổ chức cấu trúc rõ ràng, phù hợp cho việc phát triển, thử nghiệm và triển khai các ứng dụng data app đơn giản hoặc vừa phải.
 
-🏗️ Cấu trúc thư mục
-css
-Sao chép
-Chỉnh sửa
-streamlit_base/
-│
-├── app/                    # Thư mục chính chứa source code ứng dụng
-│   ├── __init__.py
-│   ├── main.py             # Điểm vào chính của ứng dụng Streamlit
-│   └── pages/              # Chứa các trang phụ của ứng dụng
-│
-├── .streamlit/             # Cấu hình Streamlit
-│   └── config.toml
-│
-├── requirements.txt        # Danh sách các package cần thiết
-├── README.md               # Tài liệu hướng dẫn (bạn đang đọc nó)
-└── .gitignore
-🚀 Cách chạy ứng dụng
-1. Clone repo:
-bash
-Sao chép
-Chỉnh sửa
-git clone https://github.com/sonjuki/streamlit_base.git
-cd streamlit_base
-2. Tạo môi trường ảo (tuỳ chọn):
-bash
-Sao chép
-Chỉnh sửa
-python -m venv venv
-source venv/bin/activate   # Trên macOS/Linux
-venv\Scripts\activate      # Trên Windows
-3. Cài đặt các thư viện:
-bash
-Sao chép
-Chỉnh sửa
-pip install -r requirements.txt
-4. Chạy ứng dụng:
-bash
-Sao chép
-Chỉnh sửa
-streamlit run app/main.py
-⚙️ Tuỳ chỉnh cấu hình
-Cấu hình trong .streamlit/config.toml giúp bạn cá nhân hoá ứng dụng, ví dụ như:
+🧰 Tính năng
+✅ Cấu trúc thư mục rõ ràng, dễ mở rộng
 
-toml
-Sao chép
-Chỉnh sửa
-[theme]
-primaryColor = "#4CAF50"
-backgroundColor = "#F0F2F6"
-secondaryBackgroundColor = "#FFFFFF"
-textColor = "#000000"
-font = "sans serif"
-📌 Gợi ý mở rộng
-Thêm kết nối cơ sở dữ liệu (SQLite, PostgreSQL, MongoDB,...)
+✅ Tích hợp cấu hình Streamlit sẵn
 
-Tích hợp xử lý Machine Learning
+✅ Hỗ trợ nhiều trang thông qua folder pages/
 
-Triển khai trên Streamlit Cloud hoặc Render
+✅ Sẵn sàng để deploy lên Streamlit Cloud hoặc các nền tảng khác
 
-📄 License
-Dự án được phân phối theo giấy phép MIT. Xem chi tiết trong LICENSE (nếu có).
+🧪 Phát triển thêm
+Bạn có thể thêm các trang mới vào thư mục app/pages/ với định dạng .py và Streamlit sẽ tự động nhận diện để tạo giao diện nhiều trang (multi-page app).
+
+🌐 Triển khai
+Bạn có thể deploy lên:
+
+Streamlit Cloud
+
+Render
+
+Heroku
+
+hoặc tự host trên VPS với Docker...
+
